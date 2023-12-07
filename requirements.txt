@@ -1,0 +1,5 @@
+python-dotenv
+transformers==4.35.2
+torch==2.1.1
+comet_ml
+Flask

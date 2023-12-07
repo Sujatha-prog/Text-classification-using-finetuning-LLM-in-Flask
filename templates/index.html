@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Text Classifier App</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Text Classifier App</h2>
+        <form action="/classify" method="post">
+            <div class="form-group">
+                <label for="text">Enter Text:</label>
+                <textarea class="form-control" id="text" name="text" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Classify</button>
+        </form>
+
+        <hr>
+
+        <h3>Explore Rotten Tomatoes Dataset Examples</h3>
+        <a href="/dataset_examples" class="btn btn-secondary">View Examples</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Text Classifier Result</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Text Classification Result</h2>
+        <p><strong>Input Text:</strong> {{ text }}</p>
+        <p><strong>Probabilities:</strong></p>
+        <ul>
+            {% for prob in probabilities %}
+                <li>{{ prob }}</li>
+            {% endfor %}
+        </ul>
+
+        <hr>
+
+        <h3>Explore Rotten Tomatoes Dataset Examples</h3>
+        <a href="/dataset_examples" class="btn btn-secondary">View Examples</a>
+    </div>
+</body>
+</html>

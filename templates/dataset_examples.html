@@ -1,0 +1,20 @@
+<!-- dataset_examples.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Dataset Examples</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Rotten Tomatoes Dataset Examples</h2>
+        <ul>
+            {% for example in examples %}
+                <li>{{ example }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
